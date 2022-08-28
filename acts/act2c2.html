@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+	<main id="swup" class="transition-fade">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script defer src="../node_modules/swup/dist/swup.min.js"></script>
+  	<script defer src="../script.js"></script>
+	<link href="../fade.css" rel="stylesheet">
+    <title>LL</title>
+</head>
+<body>
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+html, body {
+	margin: 0;
+	height: 100%;
+	overflow: hidden
+}
+body{
+	margin:0;
+	padding:0;
+	display: flex;
+	background:linear-gradient( rgba(39, 39, 68, 1) 0%, rgba(68, 62, 107, 1)35%, rgba(6,38,48,1) 100%),url("../imgs/bg.png");
+	background-blend-mode:multiply;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.but{
+	position: absolute;
+	display: flex;
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin-top: 4vh;
+}
+.menu{
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 300px;
+	font-size: 2.5vh;
+	letter-spacing: 0.135em;
+	color: #FFFFFF;
+	text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+.menu:hover{
+	color: #5d5dbe;
+    font-size: 3vh;
+	transition: 0.4s ease-in-out;
+}
+.skip{
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 300px;
+	font-size: 2.5vh;
+	letter-spacing: 0.135em;
+	color: #FFFFFF;
+	text-decoration: none;
+	margin-left: 80px;
+    transition: 0.4s ease-in-out;
+}
+.skip:hover{
+    color:#5d5dbe;
+    font-size: 3vh;
+    transition: 0.4s ease-in-out;
+}
+.help{
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 300px;
+	font-size: 2.5vh;
+	letter-spacing: 0.135em;
+	color: #FFFFFF;
+	text-decoration: none;
+	margin-left: 80px;
+    transition: 0.4s ease-in-out;
+}
+.help:hover{
+    color:#5d5dbe;
+    font-size: 3vh;
+    transition: 0.4s ease-in-out;
+}
+.cen{
+	background-size: 100%;
+	position: absolute;
+	top: 28%;
+	left: 50%;
+	transform: translate(-50%, -28%);
+}
+.ch{
+	width: 80vw;
+	height: 35vw;
+	justify-content: center;
+}
+.ch1{
+	position: absolute;
+	left: 5%;
+	width: 35%;
+	height: 80%;
+	border-radius: 1.3vh;
+	background: rgba(13, 21, 37, 0.8);
+	background-image: url(../imgs/study.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: 0.5s ease-in-out;
+}
+.ch1:hover{
+	width: 35.5%;
+	transition: 0.5s ease-in-out;
+}
+.ch2{
+	position: absolute;
+	float: right;
+	right: 5%;
+	width: 35%;
+	height: 80%;
+	border-radius: 1.3vh;
+	background: rgba(13, 21, 37, 0.8);
+	background-image: url(../imgs/library.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: 0.5s ease-in-out;
+}
+.ch2:hover{
+	width: 35.5%;
+	transition: 0.5s ease-in-out;
+}
+.text{
+	width: 100%;
+	height: 30%;
+	margin-top: 104%;
+	border-radius: 1.3vh;
+	background: rgba(13, 21, 37, 0.8);
+	border: 0.1vh solid #B8B7BD;
+	border-radius: 1.3vh;
+	text-align: center;
+}
+h4{
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 30;
+	font-size: 1.5vh;
+	letter-spacing: 0.06em;
+	color: #FFFFFF;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.hp{
+	position:fixed;
+	bottom:0;
+	right:0;
+	width: 13vw;
+	height: 23vw;
+}
+.box{
+	position:fixed;
+	bottom:0.5vh;
+	right:43vw;
+	width: 57vh;
+	height: 20vh;
+}
+.map{
+	width: 100%;
+	height: 100%;
+}
+.pin{
+	position: absolute;
+	width: 4.5%;
+	height: 20%;
+	right: 96.5%;
+	top: 24%;
+	-webkit-animation: p 1.0s forwards;
+    animation: p 5s forwards;
+}
+@keyframes p {
+	from{
+		right: 96.5%;
+		top: 24%;
+	}
+	to {
+		right: 64.5%;
+		top: 39%;
+	}
+}
+</style>
+<div class="but">
+    <a class="menu" href="/../index.html">menu</a>
+    <a class="skip" href="/../resources.html">skip to resources</a>
+    <a class="help" onclick="helpF()">help</a>
+</div>
+<audio controls HIDDEN="True" id= "audio1" LOOP="True" onloadeddata="setHalfVolume()">
+	<source SRC="../music/gMusic.mp3" type="audio/mpeg">
+  </audio>
+<script>  function setHalfVolume() {
+    var myAudio = document.getElementById("audio1");  
+    myAudio.volume = 0.25;
+    myAudio.loop = true;
+    myAudio.play();
+}  
+  function helpF() {
+  alert(
+"    |    Take a look at the pictures      |\n" +
+"    |    and read their descriptions.    |\n" +
+"    |                                                    |\n" +
+"    |    Then make a choice by           |\n" +
+"    |    clicking on the picture.           |\n" +
+"    |                                                    |\n" +
+"    |    Your choices will have             |\n" +
+"    |    consequences & affect Hexy.  |\n" );
+}</script>
+<div class="cen">
+    <div class="ch">
+        <a onclick='location.replace("act3c3.html");'><div class="ch1"><div class="text"><h4>Study alone so there will be no distraction.</h4></div></div></a>
+        <a onclick='location.replace("act3c4.html");'><div class="ch2"><div class="text"><h4>Take a break and go with his friend to the library and study for a little bit.</h4></div></div></a>
+    </div>
+</div>
+<img class="hp" src="../imgs/HexyEmotes1.png">
+<div class="box">
+    <img class="map" src="../imgs/map.png">
+    <img class="pin" src="../imgs/pin.png">
+</div>
+</body>
+</main>
+</html>

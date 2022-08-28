@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <main id="swup" class="transition-fade">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="script.js"></script>
+    <link href="fade.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>LL</title>
+</head>
+<body>
+    <div>
+        <h1>LIFE<br> &nbsp;&nbsp;LINK</h1>
+    </div>    
+        <div>
+        <a href="/acts/act1.html">
+            <button id="play">play</button>
+          </a> 
+          <a href="/about.html">
+            <button id="about">about</button>
+          </a>
+          </div>
+    <div id="line"></div>
+    <div id="lineB"></div>
+    <div class="test"></div>
+    <div class="dots"></div>
+    <div class="blob"></div>
+    <div class="squigglys"></div>
+   <img class="arrow" src="imgs/arrow image.png" alt="arrows up">
+    <img class="char"src="imgs/SPLASH IMAGE.png">
+    <audio controls HIDDEN="True" id= "audio1" LOOP="True" onloadeddata="setHalfVolume()">
+      <source SRC="music/menu.mp3" type="audio/mpeg">
+    </audio>
+    
+ <script type="text/javascript"> 
+  function setHalfVolume() {
+    var myAudio = document.getElementById("audio1");  
+    myAudio.volume = 0.25;
+    myAudio.loop = true;
+    myAudio.play();
+}</script>
+</body>
+</main>
+</html>

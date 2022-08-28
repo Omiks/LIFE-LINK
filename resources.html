@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<main id="swup" class="transition-fade">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script defer src="node_modules/swup/dist/swup.min.js"></script>
+  	<script defer src="script.js"></script>
+	<link href="fade.css" rel="stylesheet">
+    <title>LL</title>
+</head>
+<body>
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;500&display=swap');
+ html, body {
+	margin: 0;
+	height: 100%;
+	overflow: hidden
+}
+body{
+	margin:0;
+	padding:0;
+	display: flex;
+	background:linear-gradient( rgba(39, 39, 68, 1) 0%, rgba(68, 62, 107, 1)35%, rgba(6,38,48,1) 100%),url("../imgs/bg3.png");
+	background-blend-mode:multiply;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.but{
+	position: absolute;
+	display: flex;
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin-top: 4vh;
+}
+.menu{
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 500px;
+	font-size: 2.5vh;
+	letter-spacing: 0.135em;
+	color: #FFFFFF;
+	text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+.menu:hover{
+	color: #5d5dbe;
+    font-size: 3vh;
+	transition: 0.4s ease-in-out;
+}
+.skip{
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 500px;
+	font-size: 2.5vh;
+	letter-spacing: 0.135em;
+	color: #FFFFFF;
+	text-decoration: none;
+	margin-left: 80px;
+    transition: 0.4s ease-in-out;
+}
+.skip:hover{
+    color:#5d5dbe;
+    font-size: 3vh;
+    transition: 0.4s ease-in-out;
+}
+.cen{
+	background-size: 100%;
+	position: absolute;
+	top: 30vh;
+	left: 50%;
+	transform: translate(-50%, -28%);
+}
+.ch{
+	width: 80vw;
+	height: 40vw;
+	justify-content: center;
+}
+.note{
+	position: absolute;
+	font-family: 'Jost';
+	right: 2%;
+	top: 20%;
+	width: 50%;
+	height: 50%;
+	border-radius: 1vh;
+	background: rgba(13, 21, 37, 0.8);
+	color: #FFFFFF;
+	justify-content: center;
+	padding-left: 2%;
+}
+h1{
+	pointer-events:none;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size:7vw;
+    line-height: 0%;
+    letter-spacing: 0.085em;
+    color: #9FADF4;
+    mix-blend-mode: normal;
+}
+h2{
+	pointer-events:none;
+	font-family: 'Jost';
+    font-style: normal;
+	font-weight: 500;
+    font-size: 2vh;
+	color: #FFFFFF;
+}
+h3{
+    font-family: 'Jost';
+    font-weight: 300;
+    font-size: 1.2vw;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+.res{
+	font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2vh;
+	line-height: 4vh;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+</style>
+<div class="but">
+	<a class="menu" href="/index.html">menu</a> 
+</div>
+<div class="cen">
+	<div class="ch">
+		<div class="note">
+			<h2>A note from us:</h2><br>
+			<h3>To whom it concerns,</h3>
+			<h3>We have added in a plethora of our personal favorite websites/tools that we use in our daily lives–curated just for the you.</h3>
+			<h3>Thank you for enjoying our game, and we wish you the best in your educational endeavors!</h3>
+		</div>
+		<h1>resources</h1>
+		<h2>Our gift:</h2>
+		<a class="res" href="https://docs.google.com/document/d/1ca_RMsCAssSfyUwnuoY_k6XTArz4wj6RPkf-k3YQJ9I/edit">Template for Emailing School Counselor</a><br>
+		<h2>Hotlines:</h2>
+		<a class="res" href="https://drughelpline.org/teens/">Teen Drug Abuse Hotline</a><br>
+		<a class="res" href="https://www.mentalhelp.net/anxiety/hotline/">Anxiety Hotline</a><br>
+		<h2>Music:</h2>
+		<a class="res" href="https://www.npr.org/2020/03/13/815457669/isle-of-calm-stream-6-hours-of-soothing-music">6 Hours of Calming Music</a><br>
+		<h2>Focus/Time-Management Websites:</h2>
+		<a class="res" href="https://lifeat.io/">Lifeat.io</a><br>
+		<a class="res" href="https://www.notion.so/">Notion</a><br>
+		<h2>Apps for Students:</h2>
+		<a class="res" href="https://www.mayoclinic.org/healthy-lifestyle/stress-management/resources/hlv-20049495?p=1">Stress Management Resources</a><br>
+		<a class="res" href="https://www.forestapp.cc/">Forest App for Studying</a><br>
+		<a class="res" href="https://apps.apple.com/us/story/id1458819706">Jour Journaling App</a><br>
+		<a class="res" href="https://www.calm.com/?pid=googleadwords_int&af_channel=googlesem&af_c_id=14668023573&af_adset_id=136070395885&af_ad_id=603377958418&af_siteid=g&af_sub_siteid=&af_keyword=kwd-316578326783&af_sub3=c&af_sub4=CjwKCAjwgaeYBhBAEiwAvMgp2gGYzyM4nbd5G2C-8BSiwcNJYb4hucKDRcoV0BwQM9MtuToBylRPZxoCvy0QAvD_BwE&utm_medium=paid&utm_source=googlesem&utm_campaign=14668023573&utm_content=homepage&utm_term=kwd-316578326783&gclid=CjwKCAjwgaeYBhBAEiwAvMgp2gGYzyM4nbd5G2C-8BSiwcNJYb4hucKDRcoV0BwQM9MtuToBylRPZxoCvy0QAvD_BwE">Calm App for Meditation</a><br>
+	</div>
+</div>
+</body>
+</main>
+</html>

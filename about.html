@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<main id="swup" class="transition-fade">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script defer src="node_modules/swup/dist/swup.min.js"></script>
+  	<script defer src="script.js"></script>
+	<link href="fade.css" rel="stylesheet">
+    <title>LL</title>
+</head>
+<body>
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;500&display=swap');
+ html, body {
+	margin: 0;
+	height: 100%;
+	overflow: hidden
+}
+body{
+	margin:0;
+	padding:0;
+	display: flex;
+	background:linear-gradient( rgba(39, 39, 68, 1) 0%, rgba(68, 62, 107, 1)35%, rgba(6,38,48,1) 100%),url("../imgs/bg2.png");
+	background-blend-mode:multiply;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.but{
+	position: absolute;
+	display: flex;
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin-top: 4vh;
+}
+.menu{
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 500px;
+	font-size: 2.5vh;
+	letter-spacing: 0.135em;
+	color: #FFFFFF;
+	text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+.menu:hover{
+	color: #5d5dbe;
+    font-size: 3vh;
+	transition: 0.4s ease-in-out;
+}
+.skip{
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 500px;
+	font-size: 2.5vh;
+	letter-spacing: 0.135em;
+	color: #FFFFFF;
+	text-decoration: none;
+	margin-left: 80px;
+    transition: 0.4s ease-in-out;
+}
+.skip:hover{
+    color:#5d5dbe;
+    font-size: 3vh;
+    transition: 0.4s ease-in-out;
+}
+.cen{
+	background-size: 100%;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -28%);
+}
+.ch{
+	width: 80vw;
+	height: 43vw;
+	justify-content: center;
+}
+h1{
+	pointer-events:none;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size:7vw;
+    line-height: 80%;
+    letter-spacing: 0.085em;
+    color: #9FADF4;
+    mix-blend-mode: normal;
+}
+h2{
+	pointer-events:none;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1vw;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+h3{
+    font-family: 'Jost';
+    font-weight: 300;
+    font-size: 1vw;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+</style>
+<div class="but">
+	<a class="menu" href="/index.html">menu</a> 
+    <a class="skip" href="/resources.html">resources</a>
+</div>
+<div class="cen">
+	<div class="ch">
+		<h1>about this<br>
+		game</h1>
+		<h2>Main Goal:</h2>
+		<h3>Give students a short but eye-opening game about time-management and the importance of a balanced life. Our game offers a unique and calming atmosphere where students can take a break by exploring negative and ideal approaches to common situations that an average student can face in their scholarly career.</h3>
+		<h2>Why did we choose to make a game?</h2>
+		<h3>When we were thinking about the theme: "educational challenges", we had numerous different ideas, but the common idea we all agreed on was: <strong>Stress</strong>.
+		Stress is one of the <u>main</u> educational challenges that students face. It leads to burnout, mental pressure, and physical deterioration. Many students use outside sources, like games, reading, or doing hobbies to comfort themselves. We do our best to reflect these situations presented in our game.
+	</h3>
+		<h2>Why not make an app/tool for students then?</h2>
+		<h3>Simple: It already exists! There are thousands of tools/websites that promote our goal, so what’s the need in creating an app with the exact same features? We wanted to have a unique/relatable comfort game for people to learn and have access to <strong>professional existing resources that can aid in mental health/time-management</strong> while also granting a calming gaming experience.</h3>
+	</div>
+</div>
+</body>
+</main>
+</html>

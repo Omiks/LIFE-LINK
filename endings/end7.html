@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <main id="swup" class="transition-fade">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="../node_modules/swup/dist/swup.min.js"></script>
+  	<script defer src="../script.js"></script>
+	<link href="../fade.css" rel="stylesheet">
+    <title>LL</title>
+</head>
+<body>
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+html, body {
+	margin: 0;
+	height: 100%;
+	overflow: hidden
+}
+body{
+	margin:0;
+	padding:0;
+	display: flex;
+    background-color: #272744;	background-blend-mode:multiply;
+}
+h1{
+    position: absolute;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size:12vh;
+    letter-spacing: 0.085em;
+    left: 10vh;
+    color: #9FADF4;
+    mix-blend-mode: normal;
+}
+.arrow{
+	position: absolute;
+	right: 0;
+	bottom: 52vh;
+	width:16.5vw;
+	height:19.9vw;
+    transform: rotate(180deg);
+}
+.hp{
+	position:fixed;
+	bottom:0;
+	right:0;
+	width: 13vw;
+	height: 23vw;
+}
+.dots{
+    position: absolute;
+    top:-15vh;
+    width: 40%;
+    transform: rotate(180deg);
+}
+.but{
+	position: absolute;
+	display: flex;
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin-top: 4vh;
+}
+.menu{
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 300px;
+	font-size: 2.5vh;
+	letter-spacing: 0.135em;
+	color: #FFFFFF;
+	text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+.menu:hover{
+	color: #5d5dbe;
+    font-size: 3vh;
+	transition: 0.4s ease-in-out;
+}
+.skip{
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: 300px;
+	font-size: 2.5vh;
+	letter-spacing: 0.135em;
+	color: #FFFFFF;
+	text-decoration: none;
+	margin-left: 80px;
+    transition: 0.4s ease-in-out;
+}
+.skip:hover{
+    color:#5d5dbe;
+    font-size: 3vh;
+    transition: 0.4s ease-in-out;
+}
+.cen{
+	background-size: 100%;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -28%);
+}
+.ch{
+	width: 80vw;
+	height: 43vw;
+	justify-content: center;
+}
+h1{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size:7vw;
+    line-height: 88%;
+    letter-spacing: 0.085em;
+    color: #9FADF4;
+    mix-blend-mode: normal;
+}
+h2{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1vw;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+h3{
+    font-family: 'Jost';
+    font-weight: 300;
+    font-size: 1.5vw;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+</style>
+<h1>your final<br>outcome</h1>
+<div class="cen">
+	<div class="ch">
+		<h3>Hexy did relatively well on the test. he could've done better if he wasn't so stressed. however, going to a trusted friend allowed him not to have a complete breakdown(Lesson: don't overstress yourself, but if you are stressed, reach out for help and put your mental health first)</h3>
+	</div>
+</div>
+<img class="arrow" src="../imgs/arrow image.png">
+<img class="dots" src="../imgs/dots image.png">
+<div class="but">
+    <a class="menu" href="/../index.html">menu</a>
+    <a class="skip" href="/../resources.html">skip to resources</a>
+</div>
+<audio SRC="../music/gMusic.mp3" AUTOSTART="true" HIDDEN="True" LOOP="True"></audio>
+<script> window.addEventListener("DOMContentLoaded", event => {
+    const audio = document.querySelector("audio");
+    audio.volume = 0.5;
+    audio.loop = true;
+    audio.play();
+  }); </script>
+  <img class="hp" src="../imgs/HexyEmotes1.png">
+</body>
+</main>
+</html>
